@@ -18,7 +18,9 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
-
+            // I'm good at git maybe
+            Window.SetTitle("RAPH's cool thing");
+            Window.SetSize(234, 234);
         }
 
         /// <summary>
@@ -26,7 +28,12 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
+            // Clear background
+            Window.ClearBackground(Color.Gray);
 
+            // Draw quarter circle in corner
+            Draw.FillColor = Color.Magenta;
+            Draw.Circle(234, 234, 100);
         }
     }
 }
