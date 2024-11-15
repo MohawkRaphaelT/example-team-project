@@ -1,32 +1,26 @@
-﻿// Include code libraries you need below (use the namespace).
-using System;
+﻿using System;
 using System.Numerics;
 
-// The namespace your code is in.
-namespace Game10003
+namespace Game10003;
+
+// My epic game
+public class Game
 {
-    /// <summary>
-    ///     Your game code goes inside this class!
-    /// </summary>
-    public class Game
+    public void Setup()
     {
-        // Place your variables here:
 
+        // This window is awesome
+        Window.SetTitle("bWindow");
+        Window.SetSize(1337, 1337);
 
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
-        public void Setup()
-        {
+    }
+    public void Update()
+    {
 
-        }
-
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
-        public void Update()
-        {
-
-        }
+        // Epic rectangle
+        Window.ClearBackground(new Color(233, 11, 112));
+        Draw.FillColor = Color.White;
+        Draw.Rectangle(50, 50, 22, 22);
+        // Who needs communication with teammates?
     }
 }
