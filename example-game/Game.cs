@@ -18,7 +18,8 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
-
+            Window.SetSize(1000, 800);
+            Window.SetTitle("Horse");
         }
 
         /// <summary>
@@ -26,7 +27,10 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground(Color.Blue);
+            Draw.FillColor = Color.Red;
+            Draw.Rectangle(300, 200, 400, 800);
+            Console.WriteLine("Neigh.");
         }
     }
 }
