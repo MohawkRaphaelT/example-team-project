@@ -18,6 +18,8 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
+            Window.SetSize(800, 600);
+            Window.SetTitle("broken");
 
         }
 
@@ -26,7 +28,9 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground(color: Color.White);
+            Draw.FillColor = Color.Black;
+            Draw.Rectangle(300, 300, 300, 300);
         }
     }
 }
