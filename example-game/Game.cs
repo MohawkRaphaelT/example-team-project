@@ -18,7 +18,8 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
-
+            Window.SetTitle("Evan's UNCOOL thing");
+            Window.SetSize(800, 600);
         }
 
         /// <summary>
@@ -26,7 +27,9 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground(Color.Red);
+            Draw.FillColor = (Color.Black);
+            Draw.Square(400, 450, 100);
         }
     }
 }
